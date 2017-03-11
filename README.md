@@ -16,6 +16,7 @@
 
 - CLI https://github.com/rg3/youtube-dl
 - Icon http://emojione.com/
+- Product Hunt https://www.producthunt.com/posts/youtube-downloader
 
 # Features
 

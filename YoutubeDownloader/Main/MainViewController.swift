@@ -40,11 +40,20 @@ class MainViewController: NSViewController {
   }
 
   func start() {
+    let worker = Worker()
+    let arguments = worker.parse(link: linkTextView.string, location: locationTextField.stringValue)
+
+    guard !arguments.isEmpty else {
+      return
+    }
+
     startButton.title = "Stop"
     consoleTextView.string = ""
+
     task = Task()
     task?.delegate = self
-    task?.run(arguments: ["https://www.youtube.com/watch?v=EuzY9pGnAlQ"])
+
+    task?.run(arguments: arguments)
   }
 
   func stop() {

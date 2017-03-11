@@ -17,6 +17,7 @@
 		D203D0111E746A7D00F5E0A6 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = D203D0101E746A7D00F5E0A6 /* Task.swift */; };
 		D203D0141E74720700F5E0A6 /* DispatchQueue+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D203D0131E74720700F5E0A6 /* DispatchQueue+Extensions.swift */; };
 		D203D0161E7490B500F5E0A6 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = D203D0151E7490B500F5E0A6 /* Config.swift */; };
+		D203D0181E74913500F5E0A6 /* Worker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D203D0171E74913500F5E0A6 /* Worker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		D203D0101E746A7D00F5E0A6 /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		D203D0131E74720700F5E0A6 /* DispatchQueue+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+Extensions.swift"; sourceTree = "<group>"; };
 		D203D0151E7490B500F5E0A6 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		D203D0171E74913500F5E0A6 /* Worker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Worker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +156,7 @@
 			children = (
 				D203D0101E746A7D00F5E0A6 /* Task.swift */,
 				D203D0151E7490B500F5E0A6 /* Config.swift */,
+				D203D0171E74913500F5E0A6 /* Worker.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D203D00D1E7469EE00F5E0A6 /* MainViewController.swift in Sources */,
+				D203D0181E74913500F5E0A6 /* Worker.swift in Sources */,
 				D203D0141E74720700F5E0A6 /* DispatchQueue+Extensions.swift in Sources */,
 				D203D0161E7490B500F5E0A6 /* Config.swift in Sources */,
 				D203D0111E746A7D00F5E0A6 /* Task.swift in Sources */,

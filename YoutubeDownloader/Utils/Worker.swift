@@ -19,7 +19,7 @@ struct Worker {
 
     let correctLocation = correct(location: location)
     
-    return ["--output", "\"\(correctLocation)/%(title)s.%(ext)s\"", link]
+    return ["--output", "\(correctLocation)/%(title)s.%(ext)s", link]
   }
 
   func correct(location: String) -> String {

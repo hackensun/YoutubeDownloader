@@ -17,6 +17,18 @@
 - CLI https://github.com/rg3/youtube-dl
 - Icon http://emojione.com/
 
+# Features
+
+- [x] Download video
+- [x] Configure location
+- [x] Show console
+- [ ] Playlist
+- [ ] Extract mp3
+- [ ] Toggle archive
+- [ ] Resume
+- [ ] Progress indicator
+- [ ] Notification
+
 # How to use
 
 - Get the binary from https://github.com/onmyway133/YoutubeDownloader/releases

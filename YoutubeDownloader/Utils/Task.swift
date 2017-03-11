@@ -47,8 +47,9 @@ class Task {
 
     let handler =  { [weak self] (file: FileHandle!) -> Void in
       let data = file.availableData
-      guard let output = NSString(data: data, encoding: String.Encoding.utf8.rawValue)
-        else { return}
+      guard let output = NSString(data: data, encoding: String.Encoding.utf8.rawValue) else {
+        return
+      }
 
       guard let strongSelf = self,
         let string = output.components(separatedBy: "\n").first else {

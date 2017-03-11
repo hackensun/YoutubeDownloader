@@ -552,6 +552,7 @@
 				D203D0021E74691800F5E0A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D203D0031E74691800F5E0A6 /* Build configuration list for PBXNativeTarget "YoutubeDownloaderTests" */ = {
 			isa = XCConfigurationList;
@@ -560,6 +561,7 @@
 				D203D0051E74691800F5E0A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D203D0061E74691800F5E0A6 /* Build configuration list for PBXNativeTarget "YoutubeDownloaderUITests" */ = {
 			isa = XCConfigurationList;
@@ -568,6 +570,7 @@
 				D203D0081E74691800F5E0A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

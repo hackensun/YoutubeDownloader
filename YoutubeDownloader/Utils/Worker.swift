@@ -16,7 +16,17 @@ struct Worker {
       !location.isEmpty else {
       return []
     }
+
+    let correctLocation = correct(location: location)
     
-    return ["--output", "\"\(location)/%(title)s.%(ext)s\"", link]
+    return ["--output", "\"\(correctLocation)/%(title)s.%(ext)s\"", link]
+  }
+
+  func correct(location: String) -> String {
+    guard location.hasSuffix("/") else {
+      return location
+    }
+
+    return location.substring(to: location.index(before: location.endIndex))
   }
 }

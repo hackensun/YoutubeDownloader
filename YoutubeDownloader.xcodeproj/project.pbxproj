@@ -15,6 +15,7 @@
 		D203D00D1E7469EE00F5E0A6 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D203D00B1E7469EE00F5E0A6 /* MainViewController.swift */; };
 		D203D00F1E746A3700F5E0A6 /* youtube-dl in Resources */ = {isa = PBXBuildFile; fileRef = D203D00E1E746A3700F5E0A6 /* youtube-dl */; };
 		D203D0111E746A7D00F5E0A6 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = D203D0101E746A7D00F5E0A6 /* Task.swift */; };
+		D203D0141E74720700F5E0A6 /* DispatchQueue+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D203D0131E74720700F5E0A6 /* DispatchQueue+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		D203D00B1E7469EE00F5E0A6 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		D203D00E1E746A3700F5E0A6 /* youtube-dl */ = {isa = PBXFileReference; lastKnownFileType = file; path = "youtube-dl"; sourceTree = "<group>"; };
 		D203D0101E746A7D00F5E0A6 /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		D203D0131E74720700F5E0A6 /* DispatchQueue+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		D203CFDD1E74691800F5E0A6 /* YoutubeDownloader */ = {
 			isa = PBXGroup;
 			children = (
+				D203D0121E7471FD00F5E0A6 /* Extensions */,
 				D203D0091E7469EE00F5E0A6 /* cli */,
 				D203D00A1E7469EE00F5E0A6 /* Main */,
 				D203D00C1E7469EE00F5E0A6 /* Utils */,
@@ -150,6 +153,14 @@
 				D203D0101E746A7D00F5E0A6 /* Task.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		D203D0121E7471FD00F5E0A6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D203D0131E74720700F5E0A6 /* DispatchQueue+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,6 +298,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D203D00D1E7469EE00F5E0A6 /* MainViewController.swift in Sources */,
+				D203D0141E74720700F5E0A6 /* DispatchQueue+Extensions.swift in Sources */,
 				D203D0111E746A7D00F5E0A6 /* Task.swift in Sources */,
 				D203CFDF1E74691800F5E0A6 /* AppDelegate.swift in Sources */,
 			);

@@ -10,16 +10,30 @@ import Foundation
 
 protocol TaskDelegate: class {
   func task(task: Task, didOutput string: String)
+  func taskDidComplete(task: Task)
 }
 
 class Task {
 
   weak var delegate: TaskDelegate?
+  let process = Process()
 
   func run(arguments: [String]) {
-    let launchPath = Bundle.main.path(forResource: "youtube-dl", ofType: "")!
-    run(launchPath: launchPath, arguments: arguments)
+    DispatchQueue.background.async {
+      let launchPath = Bundle.main.path(forResource: "youtube-dl", ofType: "")!
+      self.run(launchPath: launchPath, arguments: arguments)
+    }
   }
+
+  func stop() {
+    DispatchQueue.background.async {
+      if self.process.isRunning {
+        self.process.terminate()
+      }
+    }
+  }
+
+  // MARK: - Helper
 
   private func run(launchPath: String, arguments: [String]) {
     let process = Process()
@@ -41,15 +55,25 @@ class Task {
         return
       }
 
-      strongSelf.delegate?.task(task: strongSelf, didOutput: string)
+      DispatchQueue.main.async {
+        strongSelf.delegate?.task(task: strongSelf, didOutput: string)
+      }
     }
 
     stdErr.fileHandleForReading.readabilityHandler = handler
     stdOut.fileHandleForReading.readabilityHandler = handler
 
-    process.terminationHandler = { (task: Process?) -> () in
+    process.terminationHandler = { [weak self] (task: Process?) -> () in
       stdErr.fileHandleForReading.readabilityHandler = nil
       stdOut.fileHandleForReading.readabilityHandler = nil
+
+      guard let strongSelf = self else {
+        return
+      }
+
+      DispatchQueue.main.async {
+        strongSelf.delegate?.taskDidComplete(task: strongSelf)
+      }
     }
 
     process.launch()

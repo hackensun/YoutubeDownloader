@@ -19,6 +19,14 @@ class MainViewController: NSViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+
+    setup()
+  }
+
+  // MARK: - Setup
+
+  func setup() {
+    locationTextField.stringValue = Config.shared.location
   }
 
   // MARK: - Action

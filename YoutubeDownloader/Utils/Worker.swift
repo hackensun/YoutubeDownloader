@@ -11,7 +11,9 @@ import Foundation
 struct Worker {
 
   func parse(link: String?, location: String?) -> [String] {
-    guard let link = link, let location = location else {
+    guard let link = link, let location = location,
+      !link.isEmpty,
+      !location.isEmpty else {
       return []
     }
     

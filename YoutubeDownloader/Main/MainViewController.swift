@@ -44,6 +44,7 @@ class MainViewController: NSViewController {
     let arguments = worker.parse(link: linkTextView.string, location: locationTextField.stringValue)
 
     guard !arguments.isEmpty else {
+      Utils.alert(title: "Error", message: "Please check your inputs")
       return
     }
 
@@ -64,7 +65,7 @@ class MainViewController: NSViewController {
 extension MainViewController: TaskDelegate {
 
   func task(task: Task, didOutput string: String) {
-    let attributedString = NSAttributedString(string: string)
+    let attributedString = NSAttributedString(string: "\(string)\n")
     consoleTextView.textStorage?.append(attributedString)
   }
 

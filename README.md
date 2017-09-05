@@ -12,11 +12,10 @@
 <br>
 </div>
 
-# Description
+## Description
 
-- CLI https://github.com/rg3/youtube-dl
-- Icon http://emojione.com/
-- Product Hunt https://www.producthunt.com/posts/youtube-downloader
+- A macOS app to download` Youtube` videos
+- Featured on Product Hunt https://www.producthunt.com/posts/youtube-downloader
 
 # Features
 
@@ -30,9 +29,14 @@
 - [ ] Progress indicator
 - [ ] Notification
 
-# How to use
+## How to install
 
 - Get the binary from https://github.com/onmyway133/YoutubeDownloader/releases
+
+## Credit
+
+- CLI https://github.com/rg3/youtube-dl
+- Icon http://emojione.com/
 
 ## Author
 

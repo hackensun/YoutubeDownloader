@@ -17,7 +17,7 @@
 - A macOS app to download` Youtube` videos
 - Featured on Product Hunt https://www.producthunt.com/posts/youtube-downloader
 
-# Features
+### Features
 
 - [x] Download video
 - [x] Configure location
